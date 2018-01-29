@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.stock">
 
-    <application android:theme="@android:style/Theme.WithActionBar">
-        <activity android:name=".ui.MainActivity">
+    <application>
+        <activity
+            android:name=".ui.MainActivity"
+            android:theme="@style/Theme.MD.RED">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

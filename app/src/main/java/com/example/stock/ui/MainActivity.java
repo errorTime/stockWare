@@ -16,6 +16,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     static final String STATE_MODE = "toolbarMode";
     static final String STATE_SEARCH_STR = "toolbarSearchStr";
     static final String STATE_SELECTED_ITEM = "drawerSelectedItem";
+    static final int FRAGMENT_AVE_ID = 0;
     static final int FRAGMENT_GROUP_EXES_ID = 1;
     static final int FRAGMENT_AUTO_ID = 2;
     static final int FRAGMENT_EXES_ID = 3;
@@ -67,8 +69,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mDrawerLayout.addDrawerListener(mActionBarDrawerToggle);
         mNavigationView = (NavigationView) findViewById(R.id.activity_main_nav_view);
         mNavigationView.setNavigationItemSelectedListener(this);
-        mode = Mode.NEW;
-        mSelectedItem = FRAGMENT_GROUP_EXES_ID;
+        mode = Mode.FREE;
+        mSelectedItem = FRAGMENT_AVE_ID;
         mTitle = getResources().getString(R.string.activity_main_drawer_item_groups_exes);
         //check recreated destroyed instance
         if (savedInstanceState != null) {
@@ -173,6 +175,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         break;
                     case FRAGMENT_AUTO_ID:
                         break;
+                    case FRAGMENT_EXES_ID:
+                        break;
+                    case FRAGMENT_STATS_ID:
+                        break;
                 }
                 break;
         }
@@ -188,8 +194,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     void selectNavItem(MenuItem item) {
         Fragment fragment = null;
         Class fragmentClass;
-        mColor = ContextCompat.getColor(getApplicationContext(), R.color.material_orange_500);
-        mStatusBarColor = ContextCompat.getColor(getApplicationContext(), R.color.material_orange_700);
+        mColor = ContextCompat.getColor(getApplicationContext(), R.color.material_red_500);
+        mStatusBarColor = ContextCompat.getColor(getApplicationContext(), R.color.material_red_700);
         switch (item.getItemId()) {
             case R.id.nav_item_groups_exes:
                 break;
@@ -227,9 +233,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (mTitle == null) mTitle = getTitle();
         outState.putCharSequence(STATE_TITLE, mTitle);
         if (mColor == null)
-            mColor = ContextCompat.getColor(getApplicationContext(), R.color.material_orange_500);
+            mColor = ContextCompat.getColor(getApplicationContext(), R.color.material_red_500);
         if (mStatusBarColor == null)
-            mStatusBarColor = ContextCompat.getColor(getApplicationContext(), R.color.material_orange_700);
+            mStatusBarColor = ContextCompat.getColor(getApplicationContext(), R.color.material_red_700);
         outState.putInt(STATE_COLOR, mColor);
         outState.putInt(STATE_STATUS_BAR_COLOR, mStatusBarColor);
         outState.putString(STATE_MODE, mode.name());

@@ -11,7 +11,7 @@
         style="?attr/appBarLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/orange"
+        android:background="@color/red"
         android:elevation="4dp"
         app:theme="?attr/actionBarTheme"
         app:titleTextAppearance="@style/Toolbar.Title.MD" />
