@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_main_toolbar"
+        style="?attr/appBarLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/orange"
+        android:elevation="4dp"
+        app:theme="?attr/actionBarTheme"
+        app:titleTextAppearance="@style/Toolbar.Title.MD" />
+    <!-- tools:openDrawer=menu in expanded form in layout view -->
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
+
+        <FrameLayout
+            android:id="@+id/activity_main_container_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!-- layout_gravity=start support left-to-right -->
+        <!-- fitsSystemWindows ViewGroup on all Screen -->
+        <!--itemTextColor=customize text color in checked state-->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/activity_main_nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:itemIconTint="@color/navigation_view_state_list"
+            app:itemTextColor="@color/navigation_view_state_list"
+            app:menu="@menu/activity_main_drawer_menu" />
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

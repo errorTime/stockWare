@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_groups_exes"
+            android:icon="@mipmap/ic_group_exes"
+            android:title="@string/activity_main_drawer_item_groups_exes" />
+        <item
+            android:id="@+id/nav_item_auto"
+            android:icon="@mipmap/ic_auto"
+            android:title="@string/activity_main_drawer_item_auto" />
+        <item
+            android:id="@+id/nav_item_exes"
+            android:icon="@mipmap/ic_exes"
+            android:title="@string/activity_main_drawer_item_exes" />
+        <item
+            android:id="@+id/nav_item_stats"
+            android:icon="@mipmap/ic_stats"
+            android:title="@string/activity_main_drawer_item_stats" />
+    </group>
+</menu>

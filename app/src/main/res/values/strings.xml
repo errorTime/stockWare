@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Records of exes</string>
+    <string name="activity_main_drawer_item_groups_exes">Groups exes</string>
+    <string name="activity_main_drawer_item_auto">Auto</string>
+    <string name="activity_main_drawer_item_exes">Exes</string>
+    <string name="activity_main_drawer_item_stats">Stats</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="toolbar_item_add">Add</string>
+    <string name="toolbar_item_search">Search</string>
+    <string name="search_hint">Search words</string>
+    <string name="toolbar_item_delete">Remove</string>
+    <string name="toolbar_item_imp_exp">Import/export</string>
+    <string name="toolbar_item_settings">Settings</string>
+    <string name="toolbar_item_help">Help</string>
+    <string name="toolbar_item_done">Done</string>
+    <string name="activity_group_exes_title_hint">GROUP NAME</string>
+    <string name="activity_group_exes_list_hint">LIST GROUP</string>
+    <string name="activity_group_exes_error">Cant be blank</string>
+    <string name="activity_auto_brand_hint">BRAND NAME</string>
+    <string name="activity_auto_model_hint">MODEL NAME</string>
+    <string name="activity_auto_year_hint">YEAR OF ISSUE</string>
+    <string name="activity_auto_error">Cant be blank</string>
+    <string-array name="group_exes_array_const">
+        <item>REFUEL</item>
+        <item>SPARES/REPAIRS</item>
+        <item>CAR WASH</item>
+        <item>PARKING</item>
+        <item>INSURANCE</item>
+        <item>MOT</item>
+        <item>TYRE</item>
+        <item>FINES</item>
+        <item>CREDIT</item>
+    </string-array>
+    <string-array name="group_list_array_const">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="group_exes_header">
+        <item>OTHER</item>
+        <item>GENERAL</item>
+    </string-array>
+    <string-array name="group_exes_note">
+        <item>standart</item>
+        <item>addon</item>
+    </string-array>
+    <string-array name="body_type_auto_entries">
+        <item>SEDAN</item>
+        <item>STATION WAGON</item>
+        <item>WAGON</item>
+        <item>COUPE</item>
+        <item>HATCHBACK</item>
+        <item>SUV</item>
+        <item>MINIVAN</item>
+        <item>VAN</item>
+        <item>CABRIOLET</item>
+    </string-array>
+    <string name="activity_auto_body_hint">BODY TYPE</string>
+    <string-array name="engine_type_auto_entries">
+        <item>PETROL</item>
+        <item>GAS</item>
+        <item>HYBRID</item>
+        <item>DISEL</item>
+        <item>ELECTRO</item>
+    </string-array>
+    <string name="activity_auto_engine_hint">ENGINE TYPE</string>
+    <string-array name="drive_type_auto_entries">
+        <item>FRONT DRIVE</item>
+        <item>REAR DRIVE</item>
+        <item>FOUR_WHEEL DRIVE</item>
+    </string-array>
+    <string name="activity_auto_drive_hint">DRIVE</string>
+    <string-array name="transmission_type_auto_entries">
+        <item>AUTOMATIC</item>
+        <item>STANDART</item>
+    </string-array>
+    <string name="activity_auto_transmission_hint">TRANSMISSION</string>
+    <string name="activity_group_exes_dialog_title">Delete the record?</string>
+    <string name="activity_auto_dialog_title">Delete the record?</string>
+    <string name="activity_group_exes_new_title">New exes group</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="activity_auto_new_title">New auto</string>
+    <string name="label_more">MORE</string>
+    <string name="activity_exes_group_hint">GROUP NAME</string>
+</resources>

@@ -1,0 +1,261 @@
+<resources>
+
+    <style name="Theme.MD"></style>
+
+    <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--theme rich color-->
+        <item name="android:textColorPrimary">@color/material_black_90</item>
+        <!--theme less rich color-->
+        <item name="android:textColorSecondary">@color/material_black_80</item>
+        <!--theme light color-->
+        <item name="android:textColorTertiary">@color/material_black_53</item>
+        <!--EditText hint color-->
+        <item name="android:textColorHint">@color/material_black_38</item>
+        <!--theme inverse color-->
+        <item name="android:textColorPrimaryInverse">@color/material_white_100</item>
+        <item name="android:textColorSecondaryInverse">@color/material_white_91</item>
+        <item name="android:textColorTertiaryInverse">@color/material_white_59</item>
+        <item name="android:textColorHintInverse">@color/material_white_38</item>
+        <!--color thin line in EditText-->
+        <item name="colorControlNormal">@color/color_control_normal</item>
+        <!--focused state|cursor|text-select-handle color -->
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+        <!--EditText-->
+        <item name="editTextStyle">@style/Widget.MD.EditText</item>
+        <!--TextInputLayout<>custom attr-->
+        <item name="textInputLayoutStyle">@style/Widget.MD.TextInputLayout</item>
+        <!--ActionBarTheme-->
+        <item name="actionBarTheme">@style/ThemeOverlay.MD.ActionBar.Colored</item>
+        <!--ActionBarLayout<>custom attr-->
+        <item name="appBarLayoutStyle">@style/Widget.MD.AppBarLayout.Colored</item>
+        <item name="spinnerStyle">@style/Widget.AppCompat.Spinner.Underlined</item>
+        <item name="autoCompleteTextViewStyle">@style/AutoCompleteTextView.MD</item>
+    </style>
+
+    <style name="Theme.MD.RED">
+        <!--app main color-->
+        <item name="colorPrimary">@color/material_red_500</item>
+        <!--status bar color-->
+        <item name="colorPrimaryDark">@color/material_red_700</item>
+        <!--accent color-->
+        <item name="colorAccent">@color/material_red_a700</item>
+    </style>
+
+    <style name="Theme.MD.PURPLE">
+        <item name="colorPrimary">@color/material_purple_500</item>
+        <item name="colorPrimaryDark">@color/material_purple_700</item>
+        <item name="colorAccent">@color/material_purple_a700</item>
+    </style>
+
+    <style name="Theme.MD.BLUE">
+        <item name="colorPrimary">@color/material_blue_500</item>
+        <item name="colorPrimaryDark">@color/material_blue_700</item>
+        <item name="colorAccent">@color/material_blue_a700</item>
+    </style>
+
+    <style name="Theme.MD.GREEN">
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_green_a700</item>
+    </style>
+
+    <style name="Theme.MD.YELLOW">
+        <item name="colorPrimary">@color/material_yellow_500</item>
+        <item name="colorPrimaryDark">@color/material_yellow_700</item>
+        <item name="colorAccent">@color/material_yellow_a700</item>
+    </style>
+
+    <style name="Theme.MD.ORANGE">
+        <item name="colorPrimary">@color/material_orange_500</item>
+        <item name="colorPrimaryDark">@color/material_orange_700</item>
+        <item name="colorAccent">@color/material_orange_a700</item>
+    </style>
+
+    <style name="Theme.MD.LIGHT_BLUE">
+        <item name="colorPrimary">@color/material_light_blue_500</item>
+        <item name="colorPrimaryDark">@color/material_light_blue_700</item>
+        <item name="colorAccent">@color/material_light_blue_a700</item>
+    </style>
+    <!--text style section-->
+    <style name="TextStyle" parent="TextAppearance.AppCompat"></style>
+
+    <style name="TextStyle.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextStyle.Title.FF"></style>
+
+    <style name="TextStyle.Title.FF.Color" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TextStyle.Caption" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextStyle.Caption.FF"></style>
+
+    <style name="TextStyle.Caption.FF.Color">
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="TextStyle.Body1" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextStyle.Body1.FF"></style>
+
+    <style name="TextStyle.Body2" parent="@style/TextStyle.Body1"></style>
+
+    <style name="TextStyle.Body2.FF"></style>
+
+    <style name="TextStyle.Body3.FF" parent="@style/TextStyle.Body1.FF">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextStyle.Subhead" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextStyle.Subhead.FF"></style>
+
+    <style name="TextStyle.Display1" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="TextStyle.Display1.FF"></style>
+
+    <style name="TextStyle.Display2" parent="TextAppearance.AppCompat.Display2">
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textSize">45sp</item>
+    </style>
+
+    <style name="TextStyle.Display2.FF"></style>
+
+    <style name="TextStyle.Display3" parent="TextAppearance.AppCompat.Display2">
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textSize">56sp</item>
+    </style>
+
+    <style name="TextStyle.Display3.FF"></style>
+
+    <style name="TextStyle.Input" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextStyle.Input.FF"></style>
+
+    <style name="Toolbar.TextStyle.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Toolbar.Subtitle" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Toolbar.Subtitle.FF"></style>
+
+    <!--EditText style-->
+    <style name="Widget.MD.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textAppearance">@style/TextStyle.Input.FF</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textColorHint">?attr/colorControlNormal</item>
+    </style>
+
+    <style name="TextAppearance.MD.Error" parent="@style/TextStyle.Caption">
+        <item name="android:textColor">@color/material_red_a700</item>
+    </style>
+
+    <style name="TextAppearance.MD.Hint" parent="@style/TextStyle.Caption">
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="TextAppearance.MD.Counter" parent="@style/TextStyle.Caption">
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="TextAppearance.MD.CounterOverflow" parent="@style/TextStyle.Caption">
+        <item name="android:textColor">@color/material_red_a700</item>
+    </style>
+
+    <style name="Widget.MD.TextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="errorTextAppearance">@style/TextAppearance.MD.Error</item>
+        <item name="hintTextAppearance">@style/TextAppearance.MD.Hint</item>
+        <item name="android:textColorHint">?attr/colorControlNormal</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="errorEnabled">true</item>
+        <item name="counterTextAppearance">@style/TextAppearance.MD.Counter</item>
+        <item name="counterEnabled">true</item>
+        <item name="counterMaxLength">25</item>
+        <item name="counterOverflowTextAppearance">@style/TextAppearance.MD.CounterOverflow</item>W
+    </style>
+
+    <style name="ColoredSpinner">
+        <item name="colorControlNormal">?attr/colorPrimary</item>
+        <item name="colorControlHighlight">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.MD.AppBarLayout" parent="Widget.Design.AppBarLayout"></style>
+
+    <style name="Widget.MD.AppBarLayout.Colored"></style>
+
+    <style name="Widget.MD.AppBarLayout.White">
+        <item name="android:background">?android:attr/colorForegroundInverse</item>
+    </style>
+
+    <style name="ThemeOverlay.MD" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@color/color_control_normal</item>
+    </style>
+
+    <style name="ThemeOverlay.MD.ActionBar">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="searchViewStyle">@style/SearchView.MD</item>
+    </style>
+
+    <style name="ThemeOverlay.MD.ActionBar.Colored">
+        <item name="colorControlNormal">?android:textColorPrimaryInverse</item>
+        <item name="android:textColorPrimary">?android:textColorPrimaryInverse</item>
+    </style>
+
+    <style name="ThemeOverlay.MD.ActionBar.White">
+        <item name="colorControlNormal">?attr/colorPrimary</item>
+        <item name="android:textColorPrimary">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Toolbar.Title.MD" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SearchView.MD" parent="Widget.AppCompat.SearchView">
+        <item name="android:textCursorDrawable">@drawable/white_cursor</item>
+        <item name="queryBackground">@android:color/transparent</item>
+        <item name="searchHintIcon">@null</item>
+        <item name="queryHint">@string/search_hint</item>
+    </style>
+
+    <style name="AutoCompleteTextView.MD" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/white_cursor</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="Dialog.Alert.MD.ORANGE" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">?android:textColorSecondary</item>
+        <item name="colorAccent">@color/material_orange_500</item>
+    </style>
+
+    <style name="Dialog.Alert.MD.PURPLE" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">?android:textColorSecondary</item>
+        <item name="colorAccent">@color/material_purple_500</item>
+    </style>
+
+    <style name="TabLayout.Theme" parent="@style/Theme.MD">
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

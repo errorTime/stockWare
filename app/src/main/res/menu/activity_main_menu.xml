@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:exes="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_new"
+        android:icon="@mipmap/ic_add"
+        android:title="@string/toolbar_item_add"
+        exes:showAsAction="always" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@mipmap/ic_search"
+        android:title="@string/toolbar_item_search"
+        exes:actionViewClass="android.support.v7.widget.SearchView"
+        exes:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@mipmap/ic_delete"
+        android:title="@string/toolbar_item_delete"
+        exes:showAsAction="always" />
+    <item
+        android:id="@+id/action_imp_exp"
+        android:title="@string/toolbar_item_imp_exp"
+        exes:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/toolbar_item_settings"
+        exes:showAsAction="never" />
+    <item
+        android:id="@+id/action_help"
+        android:title="@string/toolbar_item_help"
+        exes:showAsAction="never" />
+</menu>
