@@ -198,6 +198,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mStatusBarColor = ContextCompat.getColor(getApplicationContext(), R.color.material_red_700);
         switch (item.getItemId()) {
             case R.id.nav_item_groups_exes:
+                fragment = GroupListFragment.newInstance();
+                mode = Mode.NEW;
+                mSelectedItem = FRAGMENT_GROUP_EXES_ID;
                 break;
             case R.id.nav_item_auto:
                 break;
@@ -206,6 +209,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_item_stats:
                 break;
             default:
+                fragment = AveFragment.newInstance();
+                mode = Mode.FREE;
+                mSelectedItem = FRAGMENT_AVE_ID;
+                break;
         }
         try {
             //fragment = (Fragment) fragmentClass.newInstance();
