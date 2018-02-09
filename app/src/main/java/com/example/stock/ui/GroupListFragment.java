@@ -11,8 +11,15 @@ import android.view.ViewGroup;
 
 import com.example.stock.R;
 
-public class GroupListFragment extends Fragment {
+import java.util.List;
+
+import com.example.stock.db.Group;
+import com.example.stock.model.CustomItem;
+import com.example.stock.view.GroupView;
+
+public class GroupListFragment extends Fragment implements GroupView {
     private RecyclerView mRecycleView;
+    private GroupAdapter mAdapter;
 
     public static GroupListFragment newInstance() {
         Bundle args = new Bundle();
@@ -27,7 +34,13 @@ public class GroupListFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_group_list, container, false);
         mRecycleView = (RecyclerView) v.findViewById(R.id.group_recycler_view);
         mRecycleView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
         return v;
+    }
+
+    @Override
+    public void showGroupList(List<Group> group) {
+
     }
 
     private class GroupHolder extends RecyclerView.ViewHolder {
@@ -36,11 +49,17 @@ public class GroupListFragment extends Fragment {
         }
     }
 
-    private class GroupAdapter extends RecyclerView.Adapter<GroupHolder>{
+    private class GroupAdapter extends RecyclerView.Adapter<GroupHolder> {
+        private List<Group> mList;
+
+        public GroupAdapter(List<Group> groups) {
+            mList = groups;
+        }
 
         @Override
         public GroupHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return null;
+            LayoutInflater inflater = LayoutInflater.from(getActivity());
+            return new GroupHolder(inflater, parent);
         }
 
         @Override
@@ -50,7 +69,7 @@ public class GroupListFragment extends Fragment {
 
         @Override
         public int getItemCount() {
-            return 0;
+            return mList.size();
         }
     }
 }
